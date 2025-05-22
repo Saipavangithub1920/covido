@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   name: covidomysqldeployment
 spec:
@@ -7,12 +7,10 @@ spec:
   selector:
     matchLabels:
       app: mysql
-      version: "8.0.32"
   template:
     metadata:
       labels:
         app: mysql
-        version: "8.0.32"
     spec:
       containers:
         - name: mysqlcontainer

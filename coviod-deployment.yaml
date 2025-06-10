@@ -16,7 +16,7 @@ spec:
     spec:
       containers:  
         - name: covidocontainer
-          image: saipavangockerhub/covido:1.0
+          image: saipavangockerhub/covido:3.0
           ports:
             - containerPort: 8080
               name: tomcatport
